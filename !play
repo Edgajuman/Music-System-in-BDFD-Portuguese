@@ -1,0 +1,22 @@
+$nomention
+$if[$isSlash==true]
+$var[MS;$message[song]]
+$else
+$var[MS;$message]
+$endif
+$suppressErrors[]
+$onlyIf[$var[MS]!=;Digite o nome de uma música.]
+$var[ID;$sendMessage[Pesquisando por **$var[MS]**.;yes]]
+
+$httpPost[https://akiomae.xyz/api/music/get/;{
+  “token”: “$getVar[TOKEN]”,
+  “bot_id”: “$botID”,
+  “user_id”: “$authorID”,
+  “guild_id”: “$guildID”,
+  “channel_id”: “$channelID”,
+  “name”: “$var[MS]”,
+  “deleteMessageID”: “$var[ID]”,
+  “lang”: “pt”
+}]
+
+$suppressErrors[]

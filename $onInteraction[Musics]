@@ -1,0 +1,17 @@
+$nomention
+$textSplit[$message;-]
+$if[$splitText[1]==jmp]
+$removeAllComponents
+$nomention
+
+$var[index;$sum[$splitText[2];1]]
+$httpPost[http://node.akiomae.xyz:4402/API/skip; {
+    “token”: “$getVar[TOKEN]”,
+    “bot_id”: “$botID”,
+    “user_id”: “$authorID”,
+    “guild_id”: “$guildID”,
+    “index”: $var[index]
+}]
+
+$description[Música saltada para **$httpResult[nextSong]**]
+$endif

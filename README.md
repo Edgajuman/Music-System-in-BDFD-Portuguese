@@ -3,7 +3,7 @@
 
 Um sistema avançado para reproduzir música com o seu bot Discord no Bot Designer For Discord.
 **ESTE SISTEMA FOI REDESENHADO PARA ECONOMIZAR MAIS RECURSOS, SER MAIS FÁCIL DE USAR E SER COMPATÍVEL COM AS NOVAS LIMITAÇÕES DO BDFD**
-> Para solicitar acesso a esta nova versão, inicie sessão no servidor de suporte, abra um ticket com o motivo Suporte ou Outro e indique-nos a razão pela qual deseja o sistema de música para o seu bot BDFD.
+
 
 ## Configuração
 
